@@ -16,9 +16,9 @@ public class spawnmanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S));
+        if (Input.GetKeyDown(KeyCode.S))
         {
-
+            // Randomly generate animal index and spawn position 
             int animalIndex = Random.Range(0, animalPrefrabs.Length);
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
 
